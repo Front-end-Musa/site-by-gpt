@@ -56,6 +56,7 @@ section {
 }
 
 @keyframes slideInDown {
+
     0% {
         transform: translateY(-100%);
     }
@@ -150,3 +151,46 @@ footer {
 }
 
 @keyframes slideInUp {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #4CAF50;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        padding: 5px;
+    }
+}
